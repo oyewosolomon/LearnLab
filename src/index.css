@@ -24,6 +24,8 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222 89% 51%;
     --radius: 0.75rem;
+    --font-nanum: 'Nanum Gothic', sans-serif;
+    --font-sans: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
   }
 
   .dark {
@@ -46,10 +48,30 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
+    --font-nanum: 'Nanum Gothic', sans-serif;
+    --font-sans: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
   }
 
   * {
     @apply border-border;
+  }
+
+   /* Apply Nanum Gothic to all Korean text */
+   :lang(ko), body {
+    font-family: var(--font-nanum), var(--font-sans);
+    @apply font-normal;
+    word-break: keep-all;
+  }
+
+  /* Heading weights */
+  h1, h2, h3 {
+    font-family: var(--font-nanum), var(--font-sans);
+    @apply font-bold; /* 800 weight */
+  }
+
+  /* Better Korean typography */
+  .text-balance {
+    text-wrap: balance;
   }
   body {
     @apply bg-background text-foreground;
