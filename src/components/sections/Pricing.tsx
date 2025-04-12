@@ -14,7 +14,7 @@ const pricingPlans: PricingPlan[] = [
   {
     icon: School,
     title: "Starter",
-    price: "$99/month",
+    price: "₦100,000/month",
     features: [
       "Up to 100 students",
       "Access to 50 experiments",
@@ -24,7 +24,7 @@ const pricingPlans: PricingPlan[] = [
   {
     icon: Globe,
     title: "Pro",
-    price: "$299/month",
+    price: "₦299,000/month",
     features: [
       "Up to 500 students",
       "Access to all experiments",
